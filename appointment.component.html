@@ -94,9 +94,9 @@
               <input id="name" class="form-control" type="text" formControlName="patientId" id="patientId"/>
             </div>
             <div *ngIf="form.patientId.touched && form.patientId.invalid" class="alert alert-danger">
-              <p *ngIf="form.patientId.touched && form.patientId.errors.required">
+              <div *ngIf="form.patientId.touched && form.patientId.errors.required">
                   PatientId cannot be Blank
-              </p> 
+              </div> 
             </div>  
             </div>
           
@@ -107,9 +107,9 @@
               <input id="name" class="form-control" type="text" formControlName="doctorId" id="doctorId"/>
             </div>
             <div *ngIf="form.doctorId.touched && form.doctorId.invalid" class="alert alert-danger">
-              <p *ngIf="form.doctorId.touched && form.doctorId.errors.required">
+              <div *ngIf="form.doctorId.touched && form.doctorId.errors.required">
                   doctorId cannot be Blank
-              </p> 
+              </div> 
             </div> 
               </div>
            
@@ -124,9 +124,9 @@
               <input id="name" class="form-control" type="text" formControlName="testId" id="testId"/>
             </div>
             <div *ngIf="form.testId.touched && form.testId.invalid" class="alert alert-danger">
-              <p *ngIf="form.testId.touched && form.testId.errors.required">
+              <div *ngIf="form.testId.touched && form.testId.errors.required">
                   TestId cannot be Blank
-              </p> 
+              </div> 
             </div>
             </div> 
                   
@@ -140,9 +140,9 @@
               <input id="name" class="form-control" type="date" formControlName="appointmentDate" id="appointmentDate"/>
             </div>
             <div *ngIf="form.appointmentDate.touched && form.appointmentDate.invalid" class="alert alert-danger">
-              <p *ngIf="form.appointmentDate.touched && form.appointmentDate.errors.required">
+              <div *ngIf="form.appointmentDate.touched && form.appointmentDate.errors.required">
                   appointmentDate cannot be Blank
-              </p> 
+              </div> 
             </div>
             </div>
           
@@ -154,9 +154,9 @@
               <input id="name" class="form-control" type="text" formControlName="timeSlot" id="timeSlot" />
             </div>
             <div *ngIf="form.timeSlot.touched && form.timeSlot.invalid" class="alert alert-danger">
-              <p *ngIf="form.timeSlot.touched && form.timeSlot.required">
+              <div *ngIf="form.timeSlot.touched && form.timeSlot.required">
                   timeSlot cannot be Blank
-              </p> 
+              </div> 
             </div>
             </div>
           </div>
