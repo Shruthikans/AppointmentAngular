@@ -1,0 +1,45 @@
+<div class="form-group">
+        <label for="patientId">Patient Id</label>
+            <div class="input-group">   
+      <input id="name" class="form-control" type="text" formControlName="patientId" id="patientId"/>
+        <div *ngIf="angForm.controls['patientId'].invalid && (angForm.controls['patientId'].dirty || angForm.controls['patientId'].touched)" class="alert alert-danger">
+            <div *ngIf="angForm.controls['patientId'].errors.required">
+              PatientId is required.
+            </div>
+        </div>
+<div class="form-group">
+        <label for="doctorId">doctor Id</label>
+            <div class="input-group">   
+      <input id="name" class="form-control" type="text" formControlName="doctorId" id="doctorId"/>
+        <div *ngIf="angForm.controls['doctorId'].invalid && (angForm.controls['doctorId'].dirty || angForm.controls['doctorId'].touched)" class="alert alert-danger">
+            <div *ngIf="angForm.controls['doctorId'].errors.required">
+              DoctorId is required.
+            </div>
+        </div>
+<div class="form-group">
+        <label for="testId">test Id</label>
+            <div class="input-group">   
+      <input id="name" class="form-control" type="text" formControlName="testId" id="testId"/>
+        <div *ngIf="angForm.controls['testId'].invalid && (angForm.controls['testId'].dirty || angForm.controls['testId'].touched)" class="alert alert-danger">
+            <div *ngIf="angForm.controls['testId'].errors.required">
+             TestIdis required.
+            </div>
+        </div>
+<div class="form-group">
+        <label for="appointmentDate">appointmentDate</label>
+            <div class="input-group">   
+      <input id="name" class="form-control" type="text" formControlName="appointmentDate" id="appointmentDate"/>
+        <div *ngIf="angForm.controls['appointmentDate'].invalid && (angForm.controls['appointmentDate'].dirty || angForm.controls['appointmentDate'].touched)" class="alert alert-danger">
+            <div *ngIf="angForm.controls['appointmentDate'].errors.required">
+              AppointmentDate is required.
+            </div>
+        </div>
+<div class="form-group">
+        <label for="timeSlot">timeSlot</label>
+            <div class="input-group">   
+      <input id="name" class="form-control" type="text" formControlName="timeSlot" id="timeSlot"/>
+        <div *ngIf="angForm.controls['timeSlot'].invalid && (angForm.controls['timeSlot'].dirty || angForm.controls['timeSlot'].touched)" class="alert alert-danger">
+            <div *ngIf="angForm.controls['timeSlot'].errors.required">
+              TimeSlot is required.
+            </div>
+        </div>
